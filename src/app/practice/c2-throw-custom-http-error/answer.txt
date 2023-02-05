@@ -1,0 +1,20 @@
+  ngOnInit(): void {
+    this.c2Service.getBooksError().subscribe(
+      {
+        next: books => this.books = <BookInterface[]>books,
+        error: (err: BookTrackerError) => console.log('AAA', err)
+      }
+    );
+  }
+
+
+getBooksError(): Observable<BookInterface[] | BookTrackerError>{
+    return this.http.get<BookInterface[]>('http://googl23').pipe(
+      catchError(err => this.handleHttpError(err))
+    );
+  }
+
+  private handleHttpError(error: HttpErrorResponse): Observable<BookTrackerError> {
+    let dataError = new BookTrackerError(100, error.statusText, 'An error occurred retrieving data.');
+    return throwError(() => dataError);
+  }

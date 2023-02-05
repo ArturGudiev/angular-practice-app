@@ -1,0 +1,5 @@
+in a service implement a method that
+  1. requests wrong url
+  2. catches error
+  3. sends it to component
+  4. in components handle error

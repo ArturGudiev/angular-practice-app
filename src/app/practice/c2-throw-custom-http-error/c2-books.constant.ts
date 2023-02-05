@@ -1,6 +1,6 @@
-import {C2BookInterface} from "./c2-book.interface";
+import {BookInterface} from "./interfaces";
 
-export const C2_BOOKS: C2BookInterface[] = [
+export const C2_BOOKS: BookInterface[] = [
   {author: 'book', title: 't1'},
   {author: 'a2', title: 't2'}
 ]
