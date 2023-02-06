@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { C4RequestInterceptorRoutingModule } from './c4-request-interceptor-routing.module';
 import {C4RequestInterceptorComponent} from "./c4-request-interceptor.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({

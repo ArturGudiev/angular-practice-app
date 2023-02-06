@@ -1,8 +1,11 @@
-1. create interceptor in c4 module
-2.
-3.
+1. create 2 interceptors in c4 module
+2. create load interceptor, create add header interceptor
+3. check that you add Content-type application json
+4. check loading is there
 
 
 
 how to run:
+  npm run c4s
   node C:\Programming\Practice\Angular\rxjs-practice-app\servers\c4-server\server.js
+

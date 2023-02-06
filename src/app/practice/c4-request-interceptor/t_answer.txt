@@ -1,0 +1,32 @@
+1. ng g interceptor practice/c4-request-interceptor/req-interceptor  --skip-tests
+2.
+
+
+@Injectable()
+export class ReqInterceptorInterceptor implements HttpInterceptor {
+
+  constructor() {}
+
+  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+    console.log('ReqInterceptorInterceptor', request.url);
+    const newReq: HttpRequest<any> = request.clone({
+      setHeaders: {'Content-Type': 'application/json'}
+    });
+    return next.handle(newReq);
+  }
+}
+
+
+    {provide: HTTP_INTERCEPTORS, useClass: ReqInterceptorInterceptor, multi: true}
+
+
+  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+    this.loader.show();
+    return next.handle(request).pipe(
+      tap((event) => {
+        if (event instanceof HttpResponse) {
+          this.loader.hide();
+        }
+      })
+    );
+  }
