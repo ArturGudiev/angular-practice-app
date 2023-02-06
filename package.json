@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "c4s": "node  C:\\Programming\\Practice\\Angular\\rxjs-practice-app\\servers\\c4-server\\server.js",
+    "c5s": "node  C:\\Programming\\Practice\\Angular\\rxjs-practice-app\\servers\\c5-server\\server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

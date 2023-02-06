@@ -2,6 +2,9 @@
 2. create load interceptor, create add header interceptor
 3. check that you add Content-type application json
 4. check loading is there
+5. add 2 console.logs so you will see that both interceptors print something
+6. swap order so log message will also swap
+7.
 
 
 
