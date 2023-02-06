@@ -11,6 +11,7 @@ import {C4RequestInterceptorComponent} from "./c4-request-interceptor.component"
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     C4RequestInterceptorRoutingModule
   ]
 })
