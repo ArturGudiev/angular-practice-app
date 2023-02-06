@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {C4LoaderService} from "./c4-loader.service";
 
 @Component({
   selector: 'app-c4-request-interceptor',
@@ -8,7 +9,8 @@ import {HttpClient} from "@angular/common/http";
 })
 export class C4RequestInterceptorComponent implements OnInit {
   data = {};
-  constructor(private http: HttpClient) { }
+  isLoading$ = this.loader.isLoading$;
+  constructor(private http: HttpClient, private loader: C4LoaderService) { }
 
   ngOnInit(): void {
     this.http.get('http://localhost:3030').subscribe(data => {
