@@ -1,4 +1,5 @@
-1. create interceptor that uses default value application json
+
+1. set body default value 777 from context
 2. create util object that allows you to set its value to application xml
 3. o
 
