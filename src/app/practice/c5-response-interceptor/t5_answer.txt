@@ -1,0 +1,9 @@
+
+export const BODY = new HttpContextToken(() => '123');
+
+return event.clone({body: request.context.get(BODY)})
+
+
+    this.http.get('http://localhost:3030', {
+      context: new HttpContext().set(BODY, '777')
+    }).subscribe(data => console.log('BBB', data))
