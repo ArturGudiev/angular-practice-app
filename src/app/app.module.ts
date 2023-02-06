@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { C1CastingJsonResponseComponent } from './c1-casting-json-response/c1-casting-json-response.component';
 import { C2ThrowCustomHttpErrorComponent } from './practice/c2-throw-custom-http-error/c2-throw-custom-http-error.component';
 import {HttpClientModule} from "@angular/common/http";
+import { C3ResolverComponent } from './practice/c3-resolver/c3-resolver.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     C1CastingJsonResponseComponent,
-    C2ThrowCustomHttpErrorComponent
+    C2ThrowCustomHttpErrorComponent,
+    C3ResolverComponent
   ],
   imports: [
     BrowserModule,
