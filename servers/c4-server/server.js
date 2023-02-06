@@ -5,9 +5,10 @@ const app = express();
 const port = 3030;
 
 app.use(cors());
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   console.log('/ request', )
-  res.send({x: 1, y: 2})
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  res.send({x: 1, y: 2});
 })
 
 
