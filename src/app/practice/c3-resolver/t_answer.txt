@@ -1,0 +1,18 @@
+// resolver
+
+
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<C3BookInterface[] | C3BookTrackerError> {
+    return this.c3Service.getBooks().pipe(
+      catchError((err: C3BookTrackerError) => of(err)
+      ));
+  }
+
+
+// component
+
+const c3ResolvedData = this.activatedRoute.snapshot.data['c3resolvedData'];
+    if (c3ResolvedData instanceof C3BookTrackerError) {
+      this.errorMessage = c3ResolvedData.friendlyMessage;
+    } else {
+      this.books = c3ResolvedData;
+    }
