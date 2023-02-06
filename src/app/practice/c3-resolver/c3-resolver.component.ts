@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {BookInterface, BookTrackerError} from "../c2-throw-custom-http-error/interfaces";
+import {Component, OnInit} from '@angular/core';
 import {C3Service} from "./c3.service";
-import {catchError, Observable, throwError} from "rxjs";
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {C3BookInterface, C3BookTrackerError} from "./interfaces_and_constants";
 import {ActivatedRoute} from "@angular/router";
 
