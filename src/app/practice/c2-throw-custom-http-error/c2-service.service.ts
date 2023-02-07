@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import {catchError, Observable, of, throwError} from "rxjs";
-import {BookTrackerError, BookInterface} from "./interfaces";
+import {Injectable} from '@angular/core';
+import {Observable, of} from "rxjs";
 import {C2_BOOKS} from "./c2-books.constant";
-import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
+import {C2BookInterface} from "./interfaces";
 
 
 @Injectable({
@@ -12,7 +12,7 @@ export class C2ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getBooks(): Observable<BookInterface[]>{
+  getBooks(): Observable<C2BookInterface[]>{
     return of(C2_BOOKS);
   }
 }
