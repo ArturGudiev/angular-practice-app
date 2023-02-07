@@ -6,6 +6,7 @@
     "start": "ng serve",
     "c4s": "node  C:\\Programming\\Practice\\Angular\\rxjs-practice-app\\servers\\c4-server\\server.js",
     "c5s": "node  C:\\Programming\\Practice\\Angular\\rxjs-practice-app\\servers\\c5-server\\server.js",
+    "c6s": "nodemon  C:\\Programming\\Practice\\Angular\\rxjs-practice-app\\servers\\c6-caching-interceptor-server\\server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,6 +21,7 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "nodemon": "^2.0.20",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -36,5 +38,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 1500
   }
 }

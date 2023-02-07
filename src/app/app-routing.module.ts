@@ -7,7 +7,8 @@ const routes: Routes = [
   {  path: 'c4-interceptor',
     loadChildren: () => import('./practice/c4-request-interceptor/c4-request-interceptor.module')
       .then(m => m.C4RequestInterceptorModule)},
-  { path: 'c5', loadChildren: () => import('./practice/c5-response-interceptor/c5-response-interceptor.module').then(m => m.C5ResponseInterceptorModule) }
+  { path: 'c5', loadChildren: () => import('./practice/c5-response-interceptor/c5-response-interceptor.module').then(m => m.C5ResponseInterceptorModule) },
+  { path: 'c6', loadChildren: () => import('./practice/c6-caching-interceptor/c6-caching-interceptor.module').then(m => m.C6CachingInterceptorModule) }
 ];
 
 @NgModule({
