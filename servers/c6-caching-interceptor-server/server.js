@@ -23,6 +23,10 @@ app.get('/book/:id', async (req, res) => {
   res.send(BOOKS[id]);
 })
 
+app.post('new-book', async (req, res) => {
+  res.send({'message': 'ok'});
+})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
