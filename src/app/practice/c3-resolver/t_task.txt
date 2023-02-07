@@ -1,8 +1,0 @@
-add resolver
-
-in component either assign resolved books or error message
-
-
-tests:
-  1. in resolver use getBooks method
-  2. in resolver use getBooksError method

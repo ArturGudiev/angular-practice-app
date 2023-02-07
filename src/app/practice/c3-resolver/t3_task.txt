@@ -1,0 +1,17 @@
+add resolver
+  1. C3ResolverComponent (AppModule) takes books from C3Service
+  2. Instead, add a resolver and take books from it
+
+  Variant a: You take books without handling error
+    getBooks: passes OK
+    getBooksError: doesn't move to the view
+
+   Variant b: You handle error
+    both passes OK
+
+in component either assign resolved books or error message
+
+
+tests:
+  1. in resolver use getBooks method
+  2. in resolver use getBooksError method
