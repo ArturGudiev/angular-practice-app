@@ -1,10 +1,10 @@
-export interface BookInterface {
+export interface C2BookInterface {
   author: string;
   title: string;
 }
 
 
-export class BookTrackerError {
+export class C2BookTrackerError {
 
   constructor(public errorNumber: number,
               public message: string,
