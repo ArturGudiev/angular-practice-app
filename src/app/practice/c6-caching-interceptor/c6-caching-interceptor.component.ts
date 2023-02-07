@@ -11,7 +11,7 @@ export class C6CachingInterceptorComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('http://localhost:3030/books').subscribe(data => console.table(data));
+    this.getAllBooks();
     this.sendBookRequest(this.bookId);
   }
 
@@ -19,4 +19,8 @@ export class C6CachingInterceptorComponent implements OnInit {
     this.http.get(`http://localhost:3030/book/${this.bookId}`).subscribe(data => console.log(data));
   }
 
+  getAllBooks() {
+    this.http.get('http://localhost:3030/books')
+      .subscribe(data => console.table(data));
+  }
 }
