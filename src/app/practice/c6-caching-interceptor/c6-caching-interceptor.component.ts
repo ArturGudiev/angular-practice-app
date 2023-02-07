@@ -23,4 +23,8 @@ export class C6CachingInterceptorComponent implements OnInit {
     this.http.get('http://localhost:3030/books')
       .subscribe(data => console.table(data));
   }
+
+  sendPostRequest() {
+    this.http.post('http://localhost:3030/new-book', {}).subscribe(() => {})
+  }
 }
