@@ -26,7 +26,10 @@ export class C7Service {
   }
 
   private handleHttpError(error: HttpErrorResponse): Observable<C7BookTrackerError> {
-    let dataError = new C7BookTrackerError(100, error.statusText, 'An error occurred retrieving data.');
+    let dataError = new C7BookTrackerError(
+      100,
+      error.statusText,
+      'An error occurred retrieving data.');
     return throwError(() => dataError);
   }
 }
