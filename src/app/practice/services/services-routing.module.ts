@@ -5,7 +5,8 @@ import {ServicesComponent} from "./services.component";
 const routes: Routes = [{
   path: '', component: ServicesComponent, children: [
     {path: 'c8', loadChildren: () => import('./c8-providers/c8-providers.module').then(m => m.C8ProvidersModule)}]
-}];
+},
+  { path: 'c9', loadChildren: () => import('./c9-several-instances/c9-several-instances.module').then(m => m.C9SeveralInstancesModule) }];
 
 
 @NgModule({
