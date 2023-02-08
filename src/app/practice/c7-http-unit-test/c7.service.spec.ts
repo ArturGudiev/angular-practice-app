@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { C7Service } from './c7.service';
+import {C7BookInterface} from "./interfaces_and_constants";
 
 describe('C7Service', () => {
   let testBooks: C7BookInterface[] = [
