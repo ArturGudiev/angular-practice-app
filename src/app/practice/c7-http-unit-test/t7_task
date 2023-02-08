@@ -1,2 +1,9 @@
 Use c6s server script
 
+  1. write test for getBOoks
+    that checks URL
+    REST verb
+
+  2. test for getBookError
+    dont expect next
+    expect 2 fields
