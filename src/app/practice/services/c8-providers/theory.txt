@@ -1,0 +1,3 @@
+
+
+	I have more control over how it's created rather than using new keyword

@@ -1,0 +1,31 @@
+ Logger2Service,
+    {provide: LoggerService, useExisting: {
+
+
+provide: LoggerService, useValue: {
+      log(message: string) {
+          console.log('Logger3 ', message)
+      },
+      error(message: string) {
+        console.error('Logger3', message);
+      }
+      }
+
+
+3)
+data.service.factory.ts
+
+export function dataServiceFactory(logger: LoggerService) {
+  let dataService: DataService = new DataService(logger);
+
+  // do more stuff to configure the service if necessary
+
+  logger.log('Creating a new data service with a factory function.');
+
+  return dataService;
+
+}
+
+
+ Logger2Service,
+    {provide: LoggerService, useFactory: dataServiceFactory, deps: [Logger2Service]}

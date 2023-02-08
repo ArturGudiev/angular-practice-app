@@ -1,0 +1,14 @@
+
+1 provide one service originally in providers
+2 replace using more robust syntax useClass
+
+3 just replace useClass plainLoggerService
+  both implement the same interface (e.g. Logger2Service)
+
+4. do the same but with useExisting recipe
+
+5. useValue --- it doesnt use new keyword to create a new instance of a class
+
+6. use factory
+use factiry
+
