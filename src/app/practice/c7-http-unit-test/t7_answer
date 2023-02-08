@@ -55,7 +55,7 @@ fdescribe('C7Service', () => {
 
     let booksRequest: TestRequest = httpTestingController.expectOne('http://googl23');
 
-    booksRequest.flush('error', {
+    booksRequest.flush('what should be sent in the body', {
       status: 500,
       statusText: 'Server Error'
     });
