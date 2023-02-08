@@ -9,7 +9,8 @@ const routes: Routes = [
       .then(m => m.C4RequestInterceptorModule)},
   { path: 'c5', loadChildren: () => import('./practice/c5-response-interceptor/c5-response-interceptor.module').then(m => m.C5ResponseInterceptorModule) },
   { path: 'c6', loadChildren: () => import('./practice/c6-caching-interceptor/c6-caching-interceptor.module').then(m => m.C6CachingInterceptorModule) },
-  { path: 'c7', loadChildren: () => import('./practice/c7-http-unit-test/c7-http-unit-test.module').then(m => m.C7HttpUnitTestModule) }
+  { path: 'c7', loadChildren: () => import('./practice/c7-http-unit-test/c7-http-unit-test.module').then(m => m.C7HttpUnitTestModule) },
+  { path: 'services', loadChildren: () => import('./practice/services/services.module').then(m => m.ServicesModule) }
 ];
 
 @NgModule({
