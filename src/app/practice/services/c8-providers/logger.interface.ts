@@ -1,4 +1,4 @@
 export interface LoggerInterface {
-  log(): void;
-  error(): void;
+  log(message: string): void;
+  error(message: string): void;
 }
