@@ -3,6 +3,12 @@ import { TestBed } from '@angular/core/testing';
 import { C7Service } from './c7.service';
 
 describe('C7Service', () => {
+  let testBooks: C7BookInterface[] = [
+    {title: 'book0', author: 'author0'},
+    {title: 'book1', author: 'author1'},
+    {title: 'book2', author: 'author2'},
+  ];
+
   let service: C7Service;
 
   beforeEach(() => {
