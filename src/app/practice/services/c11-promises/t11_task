@@ -1,0 +1,8 @@
+now service sends Promise 1 resolve -1 reject
+
+ Task;
+  1. catch error in component
+  2. throw error in then and handle it
+  3. make async method
+  4. implement 2 ways to catch errors
+  5. throw error inside ASync method when service call is successful

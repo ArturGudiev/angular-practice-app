@@ -1,0 +1,46 @@
+gOnInit(): void {
+    this.c11Service.getPromise(1)
+      .then(
+        (data: any) => {
+          console.log('then', data);
+          throw new Error('New Error Here')
+        },
+        (err: any) => console.error('then err', err)
+      )
+      .catch((error: Error) => console.error('Error in catch', error))
+  }
+
+
+===
+
+
+  async getDataAsync(): Promise<void> {
+    try{
+      const data = await this.c11Service.getPromise(-1);
+      console.log('inside try block', data);
+    } catch(error) {
+      console.error('Inside catch in getDataAsync', error)
+    }
+  }
+
+
+====
+    this.getDataAsync().catch(err => console.error('then err', err));
+  }
+
+  async getDataAsync(): Promise<void> {
+      const data = await this.c11Service.getPromise(1);
+      console.log('inside try block', data);
+  }
+
+
+==== this variant handles rejected promise and errors inside async await
+
+   this.getDataAsync().catch(err => console.error('then err', err));
+  }
+
+  async getDataAsync(): Promise<void> {
+      const data = await this.c11Service.getPromise(1);
+      console.log('inside try block', data);
+      throw new Error('New Error from getDataAsync')
+  }
