@@ -1,2 +1,11 @@
 1. create custom observable
-2.
+  sucscribe twict --- what will happen?
+
+2. Create observable from 1,2 and [1,2] and log the values
+  check that automatically completes
+3. from click event on para ElementRef
+4. get only first 2 and check that completes
+5 get data from service with delay and show in template
+  print first 2
+
+6. make sure error stops the observable
