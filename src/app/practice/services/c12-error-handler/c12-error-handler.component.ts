@@ -10,6 +10,7 @@ export class C12ErrorHandlerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    throw new Error('AAAAAA');
   }
 
 }
