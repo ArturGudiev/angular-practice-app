@@ -1,0 +1,4 @@
+1 currently you have getData that returns observable
+2. make it fail by using incorrect url
+3. catch error and throw custom error
+4. print custom error in component
