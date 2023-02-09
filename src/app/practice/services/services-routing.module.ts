@@ -8,6 +8,7 @@ const routes: Routes = [{
     { path: 'c9', loadChildren: () => import('./c9-several-instances/c9-several-instances.module').then(m => m.C9SeveralInstancesModule) },
     { path: 'c10', loadChildren: () => import('./c10-catch-error/c10-catch-error.module').then(m => m.C10CatchErrorModule) },
     { path: 'c11', loadChildren: () => import('./c11-promises/c11-promises.module').then(m => m.C11PromisesModule) },
+    { path: 'c12', loadChildren: () => import('./c12-error-handler/c12-error-handler.module').then(m => m.C12ErrorHandlerModule) }
   ]},
   ];
 
