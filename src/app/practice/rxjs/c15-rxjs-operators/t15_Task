@@ -4,10 +4,19 @@
   1 element not instances of product
 
 
-2) combineLatest
+2) get latest from any o2** observables once anyone emits
   latest from each input observable
 
 static creation function, not a pipable operator
+  example: prodcuts and actions --- filtered products and actions
+
+3) get ! Last ! values from each observable
+  o31 o32
 
 
-th
+4) when o40 emits get latest values from 040, 041, 042
+  q41:
+    source emits before input observables???
+
+5) just add
+      .pipe(filter(val => val %2 === 0))

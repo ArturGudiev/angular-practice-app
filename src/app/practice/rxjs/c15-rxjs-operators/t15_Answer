@@ -7,3 +7,32 @@
 
 
 2)
+
+    // combineLatest([this.o2_every_second$, this.o2_every_3_seconds]).subscribe(val => console.log('combineLate', val))
+
+    everyone should emit
+    then every time any emits -- result emits
+
+    example
+
+
+3)
+      forkJoin([this.o3_every_second, this.o3_every_2_seconds]).subscribe(val => console.log('forkJoin', val));
+    Theory:
+      all should complete
+
+
+4) withLatestFrom
+  pre condition
+    all emits
+  each time source imtes
+
+      this.c15Service.o40_main_observable.pipe(
+        withLatestFrom(this.c15Service.o41_every_2_seconds, this.c15Service.o42_every_second)
+      ).subscribe(val => console.log('withLatestFrom', val[0], val[1], val[2]))
+
+  q41 source emits before input observables --- result observable will emits without emitting anything
+
+
+5) you have interval 1000
+  print only even values
