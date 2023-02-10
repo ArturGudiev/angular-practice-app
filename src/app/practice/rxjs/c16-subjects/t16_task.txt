@@ -1,1 +1,8 @@
-      .pipe(filter(val => val %2 === 0))
+1) make sure each subscriber gets a new observable
+2) make sure each subscriber receives notification of sub
+3) makesure behaviour subject buffers last emitter value
+  solves the problem of a late subscriber
+
+4) set initial value without touching numbers inside
+5) print sum of elements with initial 10
+6) t6_combine_sources_into_one

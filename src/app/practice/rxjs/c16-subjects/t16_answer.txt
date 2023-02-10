@@ -1,1 +1,26 @@
-      .pipe(filter(val => val %2 === 0))
+1)
+numbers$.subscribe(val => console.log('A', val));
+    numbers$.subscribe(val => console.log('B', val));
+2)
+numbers$$.subscribe(val => console.log('A', val));
+    numbers$$.next(2);
+    numbers$$.subscribe(val => console.log('B', val));
+    numbers$$.next(4);
+    numbers$$.next(6);
+    numbers$$.complete();
+
+3)
+numbers$$.next(7);
+    numbers$$.subscribe(val => console.log('CC', val));
+
+
+4)     numbers$$.pipe(
+         startWith(0)
+       ).subscribe(val => console.log('AAA', val))
+
+5)
+numbers$$.pipe(
+      scan((acc, cur) => acc + cur, 10)
+    ).subscribe(val => console.log('AAAA', val))
+
+6) merge(a$, b$).subscribe(val => console.log('AAA', val));

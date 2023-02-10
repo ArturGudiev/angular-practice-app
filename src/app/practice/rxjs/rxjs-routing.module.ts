@@ -12,10 +12,10 @@ const routes: Routes = [{
     {
       path: 'c15',
       loadChildren: () => import('./c15-rxjs-operators/c15-rxjs-operators.module').then(m => m.C15RxjsOperatorsModule)
-    }
+    },
+    { path: 'c16', loadChildren: () => import('./c16-subjects/c16-subjects.module').then(m => m.C16SubjectsModule) }
   ]
 },
-  { path: 'c16', loadChildren: () => import('./c16-subjects/c16-subjects.module').then(m => m.C16SubjectsModule) },
 ];
 
 @NgModule({
