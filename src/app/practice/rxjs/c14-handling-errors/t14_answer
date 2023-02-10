@@ -1,0 +1,8 @@
+1)
+
+t1_throw_error_using_js_throw_statement(): Observable<any>{
+    return of(1, 2, 3).pipe(
+      map(err => {
+        throw new Error('123');
+      })
+    );
