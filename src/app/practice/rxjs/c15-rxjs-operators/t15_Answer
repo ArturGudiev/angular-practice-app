@@ -1,0 +1,9 @@
+.pipe(
+      map(
+        (arr: any[]) => arr.map(val => {
+          return {x: val.x * 2, y: val.y * 2}
+        })
+      ));
+
+
+2)
