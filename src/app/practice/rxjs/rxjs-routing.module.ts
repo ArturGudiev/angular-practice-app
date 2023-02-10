@@ -15,6 +15,7 @@ const routes: Routes = [{
     }
   ]
 },
+  { path: 'c16', loadChildren: () => import('./c16-subjects/c16-subjects.module').then(m => m.C16SubjectsModule) },
 ];
 
 @NgModule({
