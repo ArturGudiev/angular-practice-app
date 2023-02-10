@@ -30,7 +30,7 @@ export class C16SubjectsComponent implements OnInit {
   }
 
   t3_late_subscriber() {
-    const numbers$$ = new BehaviorSubject<number>(0);
+    const numbers$$ = new BehaviorSubject< number>(0);
   }
 
   t4_initial_value() {
