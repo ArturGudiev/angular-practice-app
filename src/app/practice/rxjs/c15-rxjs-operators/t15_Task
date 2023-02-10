@@ -1,0 +1,13 @@
+map emits array
+  map inside map
+
+  1 element not instances of product
+
+
+2) combineLatest
+  latest from each input observable
+
+static creation function, not a pipable operator
+
+
+th
