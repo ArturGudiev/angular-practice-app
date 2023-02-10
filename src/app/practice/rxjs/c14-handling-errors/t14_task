@@ -1,7 +1,11 @@
 1) can throw error using JS throw statement
-	EMPTY
+  and throw error statement
+2) return EMPTY constant on error (googl.12)
+	 EMPTY
 
-1. throw error using js throw statement
+3)
+покажи что при OnPush одно и тоже значение не обновляется при subscribe,
+а при асинк пайп обновляется
 
 
 =========Strategies
@@ -19,10 +23,6 @@
 
 	each observable declare property
 
-	declarative pattern
-
-
-
 theory:===========================================
 
 CD strategies
@@ -32,9 +32,7 @@ Default
 	Uses the default checkAlways strategy
 
 	Every component is checked when:
-
 	- Any change is detected
-
 
 OnPush
 

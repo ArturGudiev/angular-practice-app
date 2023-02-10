@@ -5,6 +5,7 @@ import {RxjsRoutingModule} from './rxjs-routing.module';
 import {RxjsComponent} from './rxjs.component';
 import {C13ObservableComponent} from './c13-observable/c13-observable.component';
 import { C14HandlingErrorsComponent } from './c14-handling-errors/c14-handling-errors.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { C14HandlingErrorsComponent } from './c14-handling-errors/c14-handling-e
     C14HandlingErrorsComponent
   ],
   imports: [
+    HttpClientModule,
     CommonModule,
     RxjsRoutingModule
   ]

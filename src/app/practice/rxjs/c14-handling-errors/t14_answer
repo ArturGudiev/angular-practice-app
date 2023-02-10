@@ -6,3 +6,21 @@ t1_throw_error_using_js_throw_statement(): Observable<any>{
         throw new Error('123');
       })
     );
+
+
+2)
+  this.http.get<any>('http://googl.12').pipe(
+         catchError(err => EMPTY)
+       )
+
+
+3)
+<!--<div>Another Observable: {{anotherObservable | async}}</div>-->
+
+ // anotherObservable = new Observable((subscriber) => {
+  //   let i = 0;
+  //   setInterval(() => subscriber.next(i++), 1000);
+  //   setTimeout(() => subscriber.complete(), 1000000);
+  // })
+
+    changeDetection: ChangeDetectionStrategy.OnPush
