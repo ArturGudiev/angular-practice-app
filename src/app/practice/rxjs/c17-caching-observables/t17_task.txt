@@ -1,0 +1,41 @@
+npm run c6s
+
+1) there is a button that sends a book request every time
+  Cache it
+
+2)
+  try several on share replay
+3)
+4)
+5)
+6)
+
+
+
+
+  Theory: is a multicast operator
+  Returns a Subject that shares a single subscription to the underlying source
+  Takes in an optional buffer size, which is the number of items cached and replayed
+
+  On a subscribe, it replays the specified number of emissions
+
+  The items stays cached foreven even after there are no more subscribers
+
+
+
+ Share
+  By default, doesnt have a buffer
+  Deosnt replay that buffer
+
+    share(config
+
+    Set of configuration options
+
+    shareReplay is a wrapper around share
+
+    share({
+      connector: () => new ReplaySubject(1),
+      resetOnCOmplete: false,
+      resetOnError: false,
+      resetOnRefCountZero: false
+    }

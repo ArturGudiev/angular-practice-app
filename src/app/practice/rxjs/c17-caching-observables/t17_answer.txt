@@ -1,0 +1,16 @@
+1)
+.pipe(
+    shareReplay(1)
+  )
+
+
+2)
+o2$ = of(1,2,3,4,5).pipe(shareReplay(3));
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.o2$.subscribe(val => console.log('AAAA', val));
+      this.o2$.subscribe(val => console.log('AAAA2', val));
+    }, 1000);
+
+
+  }
