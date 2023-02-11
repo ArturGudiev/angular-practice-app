@@ -15,7 +15,7 @@ const routes: Routes = [{
     },
     { path: 'c16', loadChildren: () => import('./c16-subjects/c16-subjects.module').then(m => m.C16SubjectsModule) },
     { path: 'c17', loadChildren: () => import('./c17-caching-observables/c17-caching-observables.module').then(m => m.C17CachingObservablesModule) },
-
+    { path: 'c18', loadChildren: () => import('./c18-higher-order/c18-higher-order.module').then(m => m.C18HigherOrderModule) }
   ]
 },
 ];
