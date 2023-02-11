@@ -29,3 +29,10 @@ export function dataServiceFactory(logger: LoggerService) {
 
  Logger2Service,
     {provide: LoggerService, useFactory: dataServiceFactory, deps: [Logger2Service]}
+
+
+last injection token)
+export const MY_TOKEN = new InjectionToken<ForInjection>('myToken')
+
+    {provide: MY_TOKEN, useValue: new ForInjection()}
+    @Inject(MY_TOKEN) public myValue: ForInjection

@@ -5,7 +5,8 @@
   4. do the same but with useExisting recipe (use another token)
   5. useValue --- it doesnt use new keyword to create a new instance of a class
   6. use factory
-
+  7. create injection token for ForInjection class and inject it into component
+    also try to use token for ForInjection instance
 
 
 {

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {C8LoggerService} from "./c8-logger.service";
+import {ForInjection} from "./c8-providers.module";
 
 @Component({
   selector: 'app-c8-providers',
@@ -8,11 +9,13 @@ import {C8LoggerService} from "./c8-logger.service";
 })
 export class C8ProvidersComponent implements OnInit {
 
-  constructor(public c8LoggerService: C8LoggerService) { }
+  constructor(
+      // public c8LoggerService: C8LoggerService,
+               ) { }
 
   ngOnInit(): void {
-    this.c8LoggerService.log("Message 1")
-    this.c8LoggerService.error("Error 1")
+    // this.c8LoggerService.log("Message 1")
+    // this.c8LoggerService.error("Error 1")
   }
 
 }
