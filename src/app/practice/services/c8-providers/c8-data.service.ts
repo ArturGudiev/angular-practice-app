@@ -12,7 +12,7 @@ export class C8DataService {
   }
 
   error(message: string) {
-    console.error('Data Service Error');
+    console.error('Data Service ERROR');
     this.loggerService.error(message);
   }
 }
