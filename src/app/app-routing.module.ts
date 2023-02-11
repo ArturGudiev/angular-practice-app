@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'c6', loadChildren: () => import('./practice/c6-caching-interceptor/c6-caching-interceptor.module').then(m => m.C6CachingInterceptorModule) },
   { path: 'c7', loadChildren: () => import('./practice/c7-http-unit-test/c7-http-unit-test.module').then(m => m.C7HttpUnitTestModule) },
   { path: 'services', loadChildren: () => import('./practice/services/services.module').then(m => m.ServicesModule) },
-  { path: 'rxjs', loadChildren: () => import('./practice/rxjs/rxjs.module').then(m => m.RxjsModule) }
+  { path: 'rxjs', loadChildren: () => import('./practice/rxjs/rxjs.module').then(m => m.RxjsModule) },
+  { path: 'other', loadChildren: () => import('./practice/others/others.module').then(m => m.OthersModule) }
 ];
 
 @NgModule({
