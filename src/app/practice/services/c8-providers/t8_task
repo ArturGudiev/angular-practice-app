@@ -1,5 +1,7 @@
 
 1 provide one service originally in providers
+  ??? providers  component or module (this probably)
+
 2 replace using more robust syntax useClass
 
 3 just replace useClass plainLoggerService

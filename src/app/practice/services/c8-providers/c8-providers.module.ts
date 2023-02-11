@@ -12,6 +12,7 @@ import { C8ProvidersComponent } from './c8-providers.component';
   imports: [
     CommonModule,
     C8ProvidersRoutingModule
-  ]
+  ],
+  providers: []
 })
 export class C8ProvidersModule { }
