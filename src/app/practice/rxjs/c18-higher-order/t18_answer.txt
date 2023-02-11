@@ -48,3 +48,12 @@ fromEvent(document, 'click')
         switchMap(() => interval(1000))
       )
       .subscribe(console.log);
+
+
+Cold Observable
+  Doesnt emit until subscribed to
+   Unicast (http)
+
+Hot observable
+  Emits wthiotu subscribers
+   Multicast (subjects
