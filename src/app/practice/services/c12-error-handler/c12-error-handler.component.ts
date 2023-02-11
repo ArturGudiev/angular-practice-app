@@ -11,9 +11,7 @@ export class C12ErrorHandlerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    a: Subscriber;
-    throw new Error('AAAAAA');
-    of({}).subscribe()
+    throw new Error('Some error inside to invoke global error handler');
   }
 
 }
