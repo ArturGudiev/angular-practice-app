@@ -1,6 +1,6 @@
 1) make sure each subscriber gets a new observable
-2) make sure each subscriber receives notification of sub
-3) makesure behaviour subject buffers last emitter value
+2) make sure each subscriber of subject receives the same notification of sub
+3) make sure behaviour subject buffers last emitter value
   solves the problem of a late subscriber
 
 4) set initial value without touching numbers inside
@@ -8,4 +8,8 @@
 6) t6_combine_sources_into_one
 
 7) create task with replay subject
+  send last 2 values for late subscriber
+
 8) create task with async subject
+  send 1, 2, 3
+    but all subscribers should print only 3
