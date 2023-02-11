@@ -1,8 +1,17 @@
 
-  1. provide C8 service in c8 module
+  1. provide C8LoggerService
   2. replace using more robust syntax useClass
   3 for simple C8service token use plainLoggerService class
   4. do the same but with useExisting recipe (use another token)
   5. useValue --- it doesnt use new keyword to create a new instance of a class
   6. use factory
 
+
+
+{
+      log(message: string){
+        console.log('useValue', message);
+      },
+      error(message: string){
+        console.error('useValue', message);
+      }
