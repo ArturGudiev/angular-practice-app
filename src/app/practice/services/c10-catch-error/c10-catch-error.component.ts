@@ -11,7 +11,9 @@ export class C10CatchErrorComponent implements OnInit {
   constructor(private c10Service: C10Service) { }
 
   ngOnInit(): void {
-    this.c10Service.getData().subscribe(data => console.table(data));
+    this.c10Service.getData().subscribe({
+      next: data => console.table(data),
+    });
   }
 
 }
