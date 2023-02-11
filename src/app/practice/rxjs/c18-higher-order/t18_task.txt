@@ -1,0 +1,14 @@
+create 2 observables
+1) 3 observables higher order
+  each wshould wait the next
+
+2) 3 observables higher order
+     in parallel
+
+
+ 3) the same but only who emits last --- will be active
+
+ 4) timer that on click resets
+
+
+

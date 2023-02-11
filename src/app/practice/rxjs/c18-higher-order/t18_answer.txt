@@ -1,0 +1,50 @@
+1)
+ of(1,2,3).pipe(
+      concatMap(i => this.createObservable(1000, i, `obs${i}`))
+    ).subscribe(val => console.log('Outer observable', val))
+
+
+        theory:
+
+        concatMap is a transformation operator
+        - Subscribes to its input Observable
+        - Creates an output Observable
+
+        When an item is emitted, it's queued
+
+        - Item is mapped to an inner Observable as
+        specified by the provided function
+
+        - Subscribes to the inner Observable
+        - Waits!
+
+        - Inner Observable emissions are
+        concatenated to the output Observable
+
+    map + concat
+    relay race
+
+2)
+  mergeMap
+    in parallel
+
+  map + merge
+
+    of(1,2,3).pipe(
+      mergeMap(i => this.createObservable(1000-100*i, i, `obs${i}`))
+    ).subscribe(val => console.log('Outer observable', val))
+
+
+3) switchMap
+  examples: type ahead or auto completion
+
+  only 1 subscription at a time
+
+
+4)
+fromEvent(document, 'click')
+      .pipe(
+        // restart counter on every click
+        switchMap(() => interval(1000))
+      )
+      .subscribe(console.log);
