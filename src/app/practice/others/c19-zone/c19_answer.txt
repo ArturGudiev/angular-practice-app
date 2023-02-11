@@ -1,1 +1,26 @@
 1) jsut create zone
+ const myFirstZone = Zone.current.fork({
+      name: 'моя первая зона'
+    });
+
+theory: progress bar
+
+
+2)     const callback = () => {
+         const val = setInterval(() => {
+           console.log('val1', this.val);
+           this.val++;
+         }, 1000);
+
+       setTimeout(() => {
+         clearInterval(val);
+         this.ngZone.run(() => {
+           setInterval(() => {
+             console.log('val2', this.val);
+             this.val++;
+           }, 1000);
+         })
+       }, 5000) ;
+       };
+
+       this.ngZone.runOutsideAngular(callback)

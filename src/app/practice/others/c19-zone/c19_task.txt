@@ -1,1 +1,2 @@
 1) just create zone
+2) run outside angular something and then inside that run call something in
