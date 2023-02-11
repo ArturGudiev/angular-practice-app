@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {C15Service} from "./c15.service";
-import {combineLatest, forkJoin, Observable, of} from "rxjs";
+import {combineLatest, forkJoin, Observable, of, withLatestFrom} from "rxjs";
 import {map} from "rxjs/operators";
 
 @Component({
@@ -23,12 +23,14 @@ export class C15RxjsOperatorsComponent implements OnInit {
     // const o21_every_second$: Observable<number> = this.c15Service.o2_every_second;
     // const o22_every_3_seconds: Observable<number> = this.c15Service.o2_every_3_seconds;
 
-    const o31_every_second: Observable<number> = this.c15Service.o3_every_second;
-    const o32_every_2_seconds: Observable<number> = this.c15Service.o3_every_2_seconds;
-
     // 3
+    // const o31_every_second: Observable<number> = this.c15Service.o3_every_second;
+    // const o32_every_2_seconds: Observable<number> = this.c15Service.o3_every_2_seconds;
 
     // 4
+    // const o40$ = this.c15Service.o40_main_observable;
+    // const o41$ = this.c15Service.o41_every_2_seconds;
+    // const o42$ = this.c15Service.o42_every_second;
 
     // 5
     // interval(1000)
