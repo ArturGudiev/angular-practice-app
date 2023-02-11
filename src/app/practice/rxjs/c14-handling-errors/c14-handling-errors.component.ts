@@ -23,9 +23,9 @@ export class C14HandlingErrorsComponent implements OnInit {
     //   error: value => console.log('error notification', value),
     // })
     // this.t2_return_empty_on_error().subscribe({
-    //       next: val => console.log('Next notification', val),
-    //       error: err => console.error('Error notification', err),
-    //       complete: () => console.log('Complete notification')
+    //   next: val => console.log('Next notification', val),
+    //   error: err => console.error('Error notification', err),
+    //   complete: () => console.log('Complete notification')
     //  });
 
     // 3 is not working with OnPush --- fix it
@@ -34,7 +34,7 @@ export class C14HandlingErrorsComponent implements OnInit {
   }
 
   t1_throw_error_using_js_throw_statement(): Observable<any>{
-    return EMPTY;
+    throw new Error('My error')
   }
 
   private t2_return_empty_on_error(): Observable<any> {
