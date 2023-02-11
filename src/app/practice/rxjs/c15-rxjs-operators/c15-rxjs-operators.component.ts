@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {C15Service} from "./c15.service";
-import {combineLatest, forkJoin, Observable, of, withLatestFrom} from "rxjs";
+import {combineLatest, filter, forkJoin, interval, Observable, of, withLatestFrom} from "rxjs";
 import {map} from "rxjs/operators";
 
 @Component({
