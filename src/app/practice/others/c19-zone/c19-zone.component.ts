@@ -10,6 +10,16 @@ export class C19ZoneComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  t1_create_zone(){
+    const myFirstZone = Zone.current.fork({
+      name: 'моя первая зона'
+    });
+
+    console.log(myFirstZone.name); // моя первая зона
+
+    console.log(myFirstZone.parent === Zone.current); // true
 
   }
 
