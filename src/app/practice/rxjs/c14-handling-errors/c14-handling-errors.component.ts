@@ -1,12 +1,13 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {EMPTY, Observable, of} from "rxjs";
+import {EMPTY, Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 import {C14Service} from "./c14.service";
 
 @Component({
   selector: 'app-c14-handling-errors',
   templateUrl: './c14-handling-errors.component.html',
-  styleUrls: ['./c14-handling-errors.component.sass']
+  styleUrls: ['./c14-handling-errors.component.sass'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class C14HandlingErrorsComponent implements OnInit {
   val = 0;
@@ -28,7 +29,7 @@ export class C14HandlingErrorsComponent implements OnInit {
     //  });
 
     // 3 is not working with OnPush --- fix it
-    this.c14Service.myObservable$.subscribe(val => this.val = val)
+    // this.c14Service.myObservable$.subscribe(val => this.val = val)
 
   }
 
