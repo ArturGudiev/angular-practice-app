@@ -23,8 +23,8 @@ export class C15RxjsOperatorsComponent implements OnInit {
     // this.array$ = this.c15Service.getObservableArray();
 
     // 2 get latest from any o2** observables once anyone emits
-    const o21_every_second$: Observable<number> = this.c15Service.o2_every_second;
-    const o22_every_3_seconds: Observable<number> = this.c15Service.o2_every_3_seconds;
+    // const o21_every_second$: Observable<number> = this.c15Service.o2_every_second;
+    // const o22_every_3_seconds: Observable<number> = this.c15Service.o2_every_3_seconds;
 
     // this.o3_every_second.subscribe(val => console.log('o3_every_second', val));
     // this.o3_every_2_seconds.subscribe(val => console.log('o3_every_2_seconds', val));
