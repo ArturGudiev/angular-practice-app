@@ -1,1 +1,2 @@
-1. Replace error handler using the new service C12ErrorHandlerService
+1. Replace error handler in the whole app using new service C12ErrorHandlerService
+
