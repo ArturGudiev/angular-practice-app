@@ -6,3 +6,6 @@
 4) set initial value without touching numbers inside
 5) print sum of elements with initial 10
 6) t6_combine_sources_into_one
+
+7) create task with replay subject
+8) create task with async subject

@@ -14,3 +14,17 @@ o2$ = of(1,2,3,4,5).pipe(shareReplay(3));
 
 
   }
+
+
+3)
+
+    const myNewObs$ = this.http.get('http://localhost:3030/books').pipe(
+      share(
+        {
+          connector: () => new ReplaySubject(1),
+          resetOnComplete: false,
+          resetOnError: false,
+          resetOnRefCountZero: false
+        }
+      )
+    );

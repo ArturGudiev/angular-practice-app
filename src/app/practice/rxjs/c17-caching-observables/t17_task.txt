@@ -6,6 +6,7 @@ npm run c6s
 2)
   try several on share replay
 3)
+  try make the same as 1 but with share
 4)
 5)
 6)
