@@ -1,10 +1,7 @@
 
-1 provide one service originally in providers
-  ??? providers  component or module (this probably)
-
-2 replace using more robust syntax useClass
-
-3 just replace useClass plainLoggerService
+  1. provide C8 service in c8 module
+  2. replace using more robust syntax useClass
+  3 just replace useClass plainLoggerService
   both implement the same interface (e.g. Logger2Service)
 
 4. do the same but with useExisting recipe
