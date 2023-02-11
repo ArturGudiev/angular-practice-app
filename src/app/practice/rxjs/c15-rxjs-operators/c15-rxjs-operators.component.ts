@@ -23,10 +23,9 @@ export class C15RxjsOperatorsComponent implements OnInit {
     // const o21$: Observable<number> = this.c15Service.o2_every_second;
     // const o22$: Observable<number> = this.c15Service.o2_every_3_seconds;
 
-
     // 3
-    // const o31_every_second: Observable<number> = this.c15Service.o3_every_second;
-    // const o32_every_2_seconds: Observable<number> = this.c15Service.o3_every_2_seconds;
+    // const o31$: Observable<number> = this.c15Service.o3_every_second;
+    // const o32$: Observable<number> = this.c15Service.o3_every_2_seconds;
 
     // 4
     // const o40$ = this.c15Service.o40_main_observable;
